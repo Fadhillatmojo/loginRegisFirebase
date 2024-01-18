@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "988725296656",
+    "project_id": "login-register-study-flutter",
+    "storage_bucket": "login-register-study-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988725296656:android:e08c7559f30d1d769dd495",
+        "android_client_info": {
+          "package_name": "com.example.lg_regis_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkyhNObMtopWHSbMvPWl0kSE60ejEohX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
