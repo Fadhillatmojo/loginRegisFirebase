@@ -109,7 +109,27 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 40,
                     ),
-                    loginButton
+                    loginButton,
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text('Doesnt Have an Account? '),
+                        GestureDetector(
+                          onTap: () {},
+                          child: const Text(
+                            'Sign Up Here',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Colors.green,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
