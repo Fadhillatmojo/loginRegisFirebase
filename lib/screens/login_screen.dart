@@ -17,6 +17,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // image logo
+    final logoImage = Image.asset('assets/logo.png');
+
     // email field
     final emailField = TextFormField(
       autofocus: false,
@@ -88,10 +91,27 @@ class _LoginScreenState extends State<LoginScreen> {
         child: SingleChildScrollView(
           child: Container(
             color: Colors.white,
-            child: Form(
-              key: _formKey,
-              child: Column(
-                children: <Widget>[emailField, passwordField, loginButton],
+            child: Padding(
+              padding: const EdgeInsets.all(36.0),
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  children: <Widget>[
+                    logoImage,
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    emailField,
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    passwordField,
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    loginButton
+                  ],
+                ),
               ),
             ),
           ),
