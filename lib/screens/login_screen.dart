@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lg_regis_firebase/screens/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -37,8 +38,9 @@ class _LoginScreenState extends State<LoginScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.green),
+        focusedBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: Colors.green),
+          borderRadius: BorderRadius.circular(10),
         ),
         helperText: "Input Your Email",
       ),
@@ -61,8 +63,9 @@ class _LoginScreenState extends State<LoginScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.green),
+        focusedBorder: OutlineInputBorder(
+          borderSide: const BorderSide(color: Colors.green),
+          borderRadius: BorderRadius.circular(10),
         ),
         helperText: "Input Your password",
       ),
@@ -96,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Form(
                 key: _formKey,
                 child: Column(
-                  children: <Widget>[
+                  children: [
                     logoImage,
                     const SizedBox(
                       height: 20,
@@ -118,7 +121,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         const Text('Doesnt Have an Account? '),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => RegistrationScreen()),
+                            );
+                          },
                           child: const Text(
                             'Sign Up Here',
                             textAlign: TextAlign.center,
