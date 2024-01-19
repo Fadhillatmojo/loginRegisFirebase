@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lg_regis_firebase/screens/home_screen.dart';
 import 'package:lg_regis_firebase/screens/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -77,7 +78,12 @@ class _LoginScreenState extends State<LoginScreen> {
       borderRadius: BorderRadius.circular(30),
       color: Colors.green,
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const HomeScreen()),
+          );
+        },
         padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
         minWidth: MediaQuery.of(context).size.width,
         child: const Text(
@@ -116,6 +122,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 20,
                     ),
+
+                    // doesnt have acc
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -125,7 +133,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => RegistrationScreen()),
+                                builder: (context) =>
+                                    const RegistrationScreen(),
+                              ),
                             );
                           },
                           child: const Text(
