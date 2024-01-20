@@ -111,7 +111,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         prefixIcon: const Icon(Icons.key),
         prefixIconColor: Colors.green,
         contentPadding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-        hintText: '*****',
+        hintText: '*******',
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -119,7 +119,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           borderSide: const BorderSide(color: Colors.green),
           borderRadius: BorderRadius.circular(10),
         ),
-        helperText: "Input Your password",
+        helperText: "Password minimal 7 characters",
       ),
     );
     //pasword input
@@ -135,7 +135,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         prefixIcon: const Icon(Icons.key),
         prefixIconColor: Colors.green,
         contentPadding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-        hintText: '*****',
+        hintText: '******',
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -143,7 +143,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           borderSide: const BorderSide(color: Colors.green),
           borderRadius: BorderRadius.circular(10),
         ),
-        helperText: "Input Your confirmPassword",
+        helperText: "Confirm Your password",
       ),
     );
 
